@@ -3,7 +3,7 @@
 $data = $_POST;
 require '../libs/editTasks.php';
 ?>
-
+<?php if( isset($_SESSION['logged_user']) && $_SESSION["login"] == "Admin" ):?>
 <div class="container">
   <div class="mx-auto mt-5">
     <form  action="../page/editTask.php" method="POST">
@@ -44,3 +44,6 @@ require '../libs/editTasks.php';
     </form>
   </div>
 </div>
+<?php else :?>
+  <?php header('Location: /');?>
+<?php endif;?>
