@@ -1,0 +1,28 @@
+.task-list {
+  padding: 3px;
+  border: 1px solid #000;
+}
+#zag td {
+  cursor: pointer;
+  transition: 0.7s;
+}
+#zag td:hover {
+  background: #000!important;
+}
+.number {
+  display: none;
+}
+.paginator span {
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.paginator_active {
+  background: #343a40;
+  color: #fff;
+}
+.performed {
+  background: green!important;
+}
